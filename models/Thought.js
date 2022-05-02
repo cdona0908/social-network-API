@@ -22,6 +22,11 @@ const ReactionSchema = new Schema(
             get: createdAtVal => dateFormat(createdAtVal)
         }
 
+    },
+    {
+        toJSON: {
+            getters: true
+        } 
     }
 );
 
